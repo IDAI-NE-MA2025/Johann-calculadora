@@ -99,7 +99,7 @@
 			<button id="resta" onclick="restar()">Restar</button>
 			<button id="multiplica" onclick="multiplicar()">Multiplicar</button>
 			<button id="divide" onclick="dividir()">Dividir</button>
-			<button id="exponente">Exponente</button>
+			<button id="exponente" onclick="exponente()">Exponente</button>
 			<button id="raiz">Raiz</button>
 
 
@@ -155,10 +155,22 @@
 		function exponente(){
 			var num1 = document.getElementById("numero1").value;
 			var num2 = document.getElementById("numero2").value;
-			var resultado = math.exponente 
+
+			var resultado = parseInt(num1) ^ parseInt(num2)
+			 
 			var mostrar = document.getElementById("resultado");
 			mostrar.innerHTML = resultado;
 		}
+		function raiz(){
+			var num1 = document.getElementById("numero1").value;
+			var num2 = document.getElementById("numero2").value;
+
+			var resultado = parseInt(num1) ^ parseInt(num2)
+			 
+			var mostrar = document.getElementById("resultado");
+			mostrar.innerHTML = resultado;
+		}
+
 
 		
 		 
