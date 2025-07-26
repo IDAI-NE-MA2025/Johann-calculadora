@@ -96,9 +96,9 @@
 
 		<div id="btns" class="btns">
 			<button id="suma" onclick="sumar()">Sumar</button>
-			<button id="resta">Restar</button>
-			<button id="multiplica">Multiplicar</button>
-			<button id="divide">Dividir</button>
+			<button id="resta" onclick="restar()">Restar</button>
+			<button id="multiplica" onclick="multiplicar()">Multiplicar</button>
+			<button id="divide" onclick="dividir()">Dividir</button>
 			<button id="exponente">Exponente</button>
 			<button id="raiz">Raiz</button>
 
@@ -130,6 +130,37 @@
 			
 			var suma = 0; */
 		}
+		function restar(){
+			var num1 = document.getElementById("numero1").value;
+			var num2 = document.getElementById("numero2").value;
+			var resultado = parseInt(num1) - parseInt(num2)
+			var mostrar = document.getElementById("resultado");
+			mostrar.innerHTML = resultado;
+		}
+		function multiplicar(){
+			var num1 = document.getElementById("numero1").value;
+			var num2 = document.getElementById("numero2").value;
+			var resultado = parseInt(num1) * parseInt(num2)
+			var mostrar = document.getElementById("resultado");
+			mostrar.innerHTML = resultado;
+		}
+
+		function dividir(){
+			var num1 = document.getElementById("numero1").value;
+			var num2 = document.getElementById("numero2").value;
+			var resultado = parseInt(num1) / parseInt(num2)
+			var mostrar = document.getElementById("resultado");
+			mostrar.innerHTML = resultado;
+		}
+		function exponente(){
+			var num1 = document.getElementById("numero1").value;
+			var num2 = document.getElementById("numero2").value;
+			var resultado = math.exponente 
+			var mostrar = document.getElementById("resultado");
+			mostrar.innerHTML = resultado;
+		}
+
+		
 		 
 	</script>
 
